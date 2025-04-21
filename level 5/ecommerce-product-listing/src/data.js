@@ -35,6 +35,6 @@ const products = [
         description: 'Description for Product 3',
       },
     // Add more products as needed
-  ];
+  ];// this a data code // This is an array of product objects containing details such as id, name, imageUrl, price, and description.   
   
   export default products;
