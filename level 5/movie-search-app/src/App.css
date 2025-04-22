@@ -1,0 +1,42 @@
+/* App.css */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+input {
+  padding: 8px;
+  width: 300px;
+  margin: 20px 0;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+}
+
+/* MovieCard.css */
+.movie-card {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 180px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
