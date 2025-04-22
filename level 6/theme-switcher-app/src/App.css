@@ -1,0 +1,29 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app-container {
+  text-align: center;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.app-container.light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.app-container.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
