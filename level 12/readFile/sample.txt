@@ -1,0 +1,3 @@
+This is a simple text file.
+Learning to read files with Node.js!
+Have a great day!
