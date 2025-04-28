@@ -1,0 +1,9 @@
+
+CSV File Analysis:
+---------------------
+Average Math Score: 82.60
+Average Science Score: 85.40
+Average English Score: 84.00
+
+Highest Math Score: Charlie (92)
+Lowest Math Score: David (70)
