@@ -1,0 +1,14 @@
+// mongosh
+
+//use school
+
+//db.students.find().pretty()
+
+db.students.find({ age: 15 }).pretty()
+
+
+db.students.find({ grade: "10th" }).pretty()
+
+
+db.students.find({ name: { $regex: /^A/, $options: "i" } }).pretty()
+
