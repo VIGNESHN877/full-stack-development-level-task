@@ -1,0 +1,71 @@
+// db.students.insertMany([
+  {
+    name: "Alice",
+    age: 16,
+    grade: 10,
+    subjects: ["Mathematics", "Science"],
+    address: { city: "Chennai", pincode: 600001 }
+  },
+  {
+    name: "Bob",
+    age: 17,
+    grade: 11,
+    subjects: ["English", "Mathematics"],
+    address: { city: "Salem", pincode: 636001 }
+  },
+  {
+    name: "Charlie",
+    age: 18,
+    grade: 12,
+    subjects: ["Biology", "Chemistry"],
+    address: { city: "Madurai", pincode: 625001 }
+  },
+  {
+    name: "David",
+    age: 18,
+    grade: 12,
+    subjects: ["Mathematics", "Physics"],
+    address: { city: "Chennai", pincode: 600001 }
+  }
+])
+
+
+
+//db.students.find({
+  $or: [
+    { grade: 10 },
+    { grade: 11 }
+  ]
+})
+
+
+//db.students.find({
+  grade: 12,
+  age: { $gt: 17 }
+})
+
+
+//db.students.find({
+  subjects: "Mathematics"
+})
+
+
+//db.students.find({
+  "address.city": "Chennai"
+})
+
+
+//db.students.find({
+  $and: [
+    { grade: 12 },
+    { subjects: "Mathematics" },
+    { "address.city": "Chennai" }
+  ]
+})
+
+
+//db.students.find({
+  grade: 12,
+  subjects: "Mathematics",
+  "address.city": "Chennai"
+})
