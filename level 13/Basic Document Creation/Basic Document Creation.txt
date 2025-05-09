@@ -1,0 +1,65 @@
+// Start MongoDB shell
+mongosh
+
+// Create and switch to school database
+use school
+
+// Create students collection and insert documents
+db.students.insertOne({
+  name: "Alice Johnson",
+  age: 14,
+  grade: 9,
+  subjects: ["Mathematics", "Science", "English"],
+  address: {
+    street: "123 Main St",
+    city: "Springfield",
+    state: "IL"
+  }
+})
+
+db.students.insertMany([
+  {
+    name: "Bob Smith",
+    age: 15,
+    grade: 10,
+    subjects: ["History", "Mathematics", "Art"],
+    address: {
+      street: "456 Oak Ave",
+      city: "Shelbyville",
+      state: "IL"
+    }
+  },
+  {
+    name: "Carol Williams",
+    age: 16,
+    grade: 11,
+    subjects: ["Biology", "Chemistry", "Physics"],
+    address: {
+      street: "789 Pine Rd",
+      city: "Springfield",
+      state: "IL"
+    }
+  },
+  {
+    name: "David Brown",
+    age: 15,
+    grade: 10,
+    subjects: ["Computer Science", "Mathematics", "English"],
+    address: {
+      street: "321 Elm St",
+      city: "Shelbyville",
+      state: "IL"
+    }
+  },
+  {
+    name: "Eve Davis",
+    age: 17,
+    grade: 12,
+    subjects: ["Literature", "History", "Art"],
+    address: {
+      street: "654 Maple Dr",
+      city: "Springfield",
+      state: "IL"
+    }
+  }
+])
